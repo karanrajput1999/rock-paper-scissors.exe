@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh; /* if uses height in % align-items doesn't work*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bg.jpg);
+}
+
+#heading {
+  font-size: 50px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.385);
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+  height: 850px;
+  background-color: #ee2a2a;
+  border: 7px solid black;
+  border-radius: 15px;
+  color: #fff;
+}
+
+#scores {
+  width: 800px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.385);
+}
+
+#player-board {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#computer-board {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#turn-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 200px;
+  /* background-color: burlywood; */
+  margin: 50px 0 0 0;
+}
+
+#player-turn-info {
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid black;
+  margin-left: 75px;
+  font-size: 100px;
+  text-align: center;
+  border-radius: 15px;
+}
+#computer-turn-info {
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  border: 5px solid black;
+  margin-right: 75px;
+  font-size: 100px;
+  text-align: center;
+  border-radius: 15px;
+}
+#vs-text {
+  font-size: 40px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: white;
+}
+
+#win-info {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.385);
+  font-size: 40px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: white;
+}
+
+.icons {
+  font-size: 60px;
+}
+.score {
+  font-size: 60px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: white;
+}
+
+#player-btns {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.btns {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #fff;
+  border: 5px solid black;
+}
+
+#reset-btn {
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #fff;
+  font-size: 25px;
+  font-family: "Mochiy Pop One", sans-serif;
+  border: 5px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
